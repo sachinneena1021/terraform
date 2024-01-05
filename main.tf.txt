@@ -4,6 +4,7 @@ module "ec2_instance" {
   name = "terraform1-instance"
 
   instance_type          = "t2.micro"
+  ami                    = "ami-0a0f1259dd1c90938"
   key_name               = "bindya"
   monitoring             = true
   vpc_security_group_ids = ["sg-04a1ee0cd9ddbf3da"]
