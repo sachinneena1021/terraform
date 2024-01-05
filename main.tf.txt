@@ -7,6 +7,7 @@ module "ec2_instance" {
   ami                    = "ami-0a0f1259dd1c90938"
   key_name               = "bindya"
   monitoring             = true
+  vpc_id                 =  vpc-028f3ab924c124396
   vpc_security_group_ids = ["sg-04a1ee0cd9ddbf3da"]
   subnet_id              = "subnet-0e665375253545ab6"
 
