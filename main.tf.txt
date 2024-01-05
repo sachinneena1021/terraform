@@ -6,6 +6,6 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   ami                    = "ami-02a2af70a66af6dfb"
   key_name               = "bindya.pem"
-  vpc_security_group_ids = ["subnet-0e665375253545ab6"]
+  vpc_security_group_ids = ["sg-04a1ee0cd9ddbf3da"]
 
 }
