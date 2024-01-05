@@ -1,0 +1,11 @@
+module "ec2_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+
+  name = "Terrafrom_Nov_2023"
+
+  instance_type          = "t2.micro"
+  ami                    = "ami-02a2af70a66af6dfb"
+  key_name               = "bindya.pem"
+  vpc_security_group_ids = ["subnet-0e665375253545ab6"]
+
+}
